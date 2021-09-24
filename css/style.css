@@ -577,13 +577,17 @@ box-shadow:
 
     .title-wrap {
         position: relative;
+        z-index: 2;
         margin: 0;
-        height: 100%;
+        height: 30vh;
         top: 15vh;
     }
 
     .img-wrap {
+        position: relative;
+        z-index: 0;
         width: 60%;
+        height: 70vh;
         margin: 0 auto;
     }
     
@@ -591,6 +595,8 @@ box-shadow:
      object-fit: contain;
      top: 0;
      margin: 0 auto;
+     width: 110%;
+     right: 15%;
     }
 
     .coverImg{
