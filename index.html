@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Riccardo Zanella Portfolio</title>
+    <!-- GLIDE LINKS -->
+    <script src="/glide/glide.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/glide/glide.core.min.css">
+    <link rel="stylesheet" href="/glide/glide.theme.min.css">
+    <link rel="stylesheet" href="/glide/glidestyle.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-grid.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/glide/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body onload="firstLoad()">
+    <!-- Title -->
+    <div class="title-container">
+        <div class="title-wrap">
+                <h1 class="title name titleFirstLoad">RICCARDO<br>ZANELLA</h1>
+                <ul class="nav navFirstLoad" id="nav" >
+                    <li class="main-nav"><a class="about" href="#">about</a></li>
+                    <li class="main-nav" id="works-link"><a class="works" href="#">works</a></li>
+                    <li class="main-nav"><a class="contact" href="#">contact</a></li>
+                    <li class="sub-nav"><a class="photography" href="#photography">photography</a></li>
+                    <li class="sub-nav"><a class="graphic" href="#graphic">graphic</a></li>
+                    <li class="sub-nav"><a class="animation" href="#">animation</a></li>
+        </div>
+        <div class="img-wrap" id="imgFirstLoad">
+            <div class="bg-rect" id="bg-rect"></div>
+            <div class="img-container">
+            <img src="/img/Banner_1.png" alt="banner1" class="coverImg mySlides">
+            <img src="/img/Banner_2.png" alt="banner2" class="coverImg mySlides">
+            <img src="/img/Banner_3.png" alt="banner3" class="coverImg mySlides">
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-container">
+        <div class="profile-container">
+            <img src="/img/profile.png" alt="" class="profile">
+        </div>
+        <div class="about-wrap">
+            <div class="about-title">
+                <h2 class="about-stroke">about</h2>
+                <h3 class="about-filled">about</h3>
+            </div>
+            <div class="about-info">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PHOTOGRAPHY -->
+
+    <div class="photography-container" id="photography">
+        <div class="photography-title">
+                <h2 class="stroke">photography</h2>
+                <h3 class="filled">photography</h3>
+        </div>
+        <div class="switch-wrap">
+            <div class="switch-btn">
+                <input type="radio" class="checkbox-landscape" id="input-land" name="check" checked>
+                <label for="check-land" onlick="landscapeClick" onclick="landscapeSlide" id="label-land">landscapes</label>
+                <input type="radio" class="checkbox-food" id="input-food" name="check">
+                <label for="check-food" onlick="foodClick" onclick="foodSlide"  id="label-food">food</label>
+                <input type="radio" class="checkbox-events" onclick="eventsSlide" id="input-events" name="check">
+                <label for="check-events" onlick="eventsClick"  id="label-events">events and portraits</label>
+                <span id="moving-check"></span>
+            </div>
+        </div>
+
+
+        <!-- 
+        <div class="photography-wrap">
+            <div id="slider-selector"></div>
+            <ul class="category">
+                <li id="landscape" onclick="landscapeClick">landscape</li>
+                <li id="food" onclick="foodClick">food</li>
+                <li id="events" onclick="eventsClick">events and portraits</li>
+            </ul>
+            
+            <div class="carousel-container">
+                <img src="/img/Banner_1.jpg" alt="" class="carousel img1">
+                <img src="/img/Banner_1.png" alt="" class="carousel img2">
+                <img src="/img/Banner_2.png" alt="" class="carousel img3 center-img">
+                <img src="/img/Banner_3.png" alt="" class="carousel img4">
+                <img src="/img/Banner_2.png" alt="" class="carousel img5">
+            </div>-->
+            <!--         <div class="splide" id="image-slider">
+                <div class="spilde__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="/img/Banner_1.jpg" alt="" class="carousel img1"></li>
+                        <li class="splide__slide">
+                            <img src="/img/Banner_1.png" alt="" class="carousel img2"></li>
+                        <li class="splide__slide">
+                            <img src="/img/Banner_2.png" alt="" class="carousel img3"></li>
+                        <li class="splide__slide">
+                            <img src="/img/Banner_3.png" alt="" class="carousel img4"></li>
+                        <li class="splide__slide">
+                            <img src="/img/Banner_2.png" alt="" class="carousel img5"></li>
+                    </ul>
+                </div>
+            </div> -->
+        <div class="multi-carousel">
+            <div class="carousel-container" id="carouselLand">
+                <div class="glide glideland">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide"><img src="/img/landscape/Land_1.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/landscape/Land_2.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/landscape/Land_3.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/landscape/Land_4.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/landscape/Land_5.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/landscape/Land_6.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/landscape/Land_7.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-container" id="carouselFood">
+                <div class="glide glidefood">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide"><img src="/img/food/Food_1.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/food/Food_2.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/food/Food_3.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/food/Food_4.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/food/Food_5.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/food/Food_6.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/food/Food_7.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/food/Food_8.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-container" id="carouselEvents">                
+                <div class="glide glideevent">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide"><img src="/img/events/event_1.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/events/event_2.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/events/event_3.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/events/event_4.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/events/event_5.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/events/event_6.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="/img/events/event_7.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRAPHIC -->
+
+    <div class="graphic-container" id="graphic">
+        <div class="graphic-title">
+                <h2 class="stroke">graphic</h2>
+                <h3 class="filled">graphic</h3>
+        </div>
+
+        <!-- GREENLAB -->
+        <div class="graphic-box container-fluid">
+            <div class="graphic-head row">
+                <div class="brand-title col-6" style="width: 655px">
+                    <h4>GREENLAB</h4>
+                </div>
+                <div class="brand-text col-6" style="width: 655px">    
+                    <p>A new brand identity for a new generation club: restaurant and cocktail-bar fully and deeply surrounded by nature</p>
+                </div>
+            </div>
+
+            <div class="row no-gutters graphic-wrap">
+                <div class="col-12 col-sm-6">
+                    <img src="/img/greenlab/greenlabBanner.jpg" alt="" class="graphic-img">
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <div class="row no-gutters">
+                            <img src="/img/greenlab/greenlabFoto.jpg" alt="" class="graphic-img">
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <div class="row no-gutters"><img src="/img/greenlab/BDV.jpg" alt="" class="graphic-img"></div>
+                            <div class="row no-gutters"><img src="/img/greenlab/menu.jpg" alt="" class="graphic-img"></div>
+                        </div>
+                        <div class="col"><img src="/img/greenlab/IG.jpg" alt="" class="graphic-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FICUS -->  
+        <div class="graphic-box container-fluid">
+            <div class="graphic-head row">
+                <div class="brand-title col-6" style="width: 655px">
+                    <h4>ficus</h4>
+                </div>
+                <div class="brand-text col-6" style="width: 655px">
+                    <p>House party event</p>
+                </div>
+            </div>
+            <div class="row no-gutters graphic-wrap">
+                <div class="col-12 col-sm-6">
+                    <img src="/img/ficus/ficus_flyer.jpg" alt="" class="graphic-img">
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="row no-gutters"><img src="/img/ficus/ficus_icon.jpg" alt="" class="graphic-img"></div>
+                    <div class="row no-gutters">
+                        <video id="video_ficus" autoplay loop>
+                            <source src="/img/ficus/Ficus.mov" type="video/mp4" >
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3"><img src="/img/ficus/foto_icon.jpg" alt="" class="graphic-img"></div>
+            </div>
+        </div>
+
+        <!-- GAMP -->
+        <div class="graphic-box container-fluid">
+            <div class="graphic-head row">
+                <div class="brand-title col-6" style="width: 655px">
+                    <h4>GAMP</h4>
+                </div>
+                <div class="brand-text col-6" style="width: 655px">
+                    <p>Company of services and supply of fire and gas detection and anti-theft and anti-intrusion systems</p>
+                </div>
+            </div>
+            <div class="row no-gutters graphic-wrap">
+                <div class="col-12 col-sm-6">
+                    <img src="/img/gamp/gamp_logo.jpg" alt="" class="graphic-img">
+                </div>
+                <div class="col-12 col-sm-6 nopadding">
+                    <div class="row no-gutters">
+                        <img src="/img/gamp/gamp_text-01.jpg" alt="" class="graphic-img">
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-6"><img src="/img/gamp/gamp_brochure.jpg" alt="" class="graphic-img"></div>
+                        <div class="col-12 col-sm-6"><img src="/img/gamp/gamp_bdv.jpg" alt="" class="graphic-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GLUTENFE -->
+        <div class="graphic-box container-fluid">
+            <div class="graphic-head row">
+                <div class="brand-title col-6" style="width: 655px">
+                    <h4>glutenfe</h4>
+                </div>
+                <div class="brand-text col-6" style="width: 655px">
+                    <p>A brand proposal for a gluten-free shops located in Ferrara</p>
+                </div>
+            </div>
+            <div class="row no-gutters graphic-wrap">
+                <div class="col-12 col-sm-6">
+                    <img src="/img/glutenfe/glutenfe_logo.jpg" alt="" class="graphic-img">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-6"><img src="/img/glutenfe/glutenfe_signboard.jpg" alt="" class="graphic-img"></div>
+                        <div class="col-12 col-sm-6"><img src="/img/glutenfe/glutenfe_logo_orange.jpg" alt="" class="graphic-img"></div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-6"><img src="/img/glutenfe/glutenfe_bdv.jpg" alt="" class="graphic-img"></div>
+                        <div class="col-12 col-sm-6"><img src="/img/glutenfe/glutenfe_bag.jpg" alt="" class="graphic-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ANIMATION -->
+
+    <div class="anim-container" id="animation">
+        <div class="anim-title">
+                <h2 class="stroke">animation</h2>
+                <h3 class="filled">animation</h3>
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="/app.js"></script>
+    <script src="/glide/glideapp.js"></script>
+    <!-- BOOSTRAP SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
