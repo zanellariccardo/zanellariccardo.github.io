@@ -1,14 +1,28 @@
 @font-face {
     font-family: 'Neufreit Extrabold';
-    src: url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold.otf) format("opentype"), url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold.ttf) format("truetype");
+    src: url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold.otf) format("opentype"),
+    url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold.ttf) format("truetype");
 }
 @font-face {
     font-family: 'Neufreit Extrabold Italic';
-    src: url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold\ Italic.otf) format("opentype"), url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold\ Italic.ttf) format("truetype");
+    src: url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold\ Italic.otf) format("opentype"),
+    url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold\ Italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Archia';
+    src: url(/fonts/archia-regular-webfont.eot);
+    src: url('/fonts/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url(/fonts/archia-regular-webfont.woff2) format('woff2'),
+         url(/fonts/archia-regular-webfont.woff) format('woff'),
+         url(/fonts/archia-regular-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal
 }
 @font-face {
     font-family: 'Archia';
-    src: url(//fonts/Archia-Regular.otf) format("opentype"), url(//fonts/Archia-Regular.ttf) format("truetype"), ;
+    src: url(//fonts/Archia-Regular.otf) format("opentype"),
+    url(//fonts/Archia-Regular.ttf) format("truetype"), ;
 }
 
 :root {
@@ -540,6 +554,7 @@ box-shadow:
 
 @media only screen and (max-width: 1008px) {
     body {
+        overflow-x: hidden;
     }
 
     .title-container {
@@ -561,46 +576,54 @@ box-shadow:
 @media only screen and (max-width: 640px) {
     
     html {
-        font-size: 18px;
+        font-size: 16px;
         overflow-x: hidden;
     }
     
     
 
     .title-container {
-        width: 100%;
-        flex-wrap: wrap;
-        overflow: hidden;
+
         height: 100%;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        flex-wrap: nowrap;
+        overflow: hidden;
     }
 
     .title-wrap {
         position: relative;
         z-index: 2;
-        margin: 0;
-        height: 30vh;
-        top: 15vh;
+        margin: 20% auto 5% auto;
     }
 
     .img-wrap {
         position: relative;
         z-index: 0;
         width: 60%;
-        height: 70vh;
+        height: 50vh;
         margin: 0 auto;
+
     }
     
     .img-container{
-     object-fit: contain;
      top: 0;
-     margin: 0 auto;
+     margin: auto;
      width: 110%;
+     height: 100%;
      right: 15%;
+    }
+
+    #bg-rect {
+        display: none;
     }
 
     .coverImg{
         width: 100%;
+        top:0;
     }
 
     ul.nav {
@@ -616,6 +639,5 @@ box-shadow:
     }
 
     .graphic-wrap {
-        margin: 
     }
 }
