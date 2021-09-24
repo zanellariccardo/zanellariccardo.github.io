@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Neufreit Extrabold';
-    src: url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold.otf) format('otf');
+    src: url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold.otf) format("opentype"), url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold.ttf) format("truetype");
 }
 @font-face {
     font-family: 'Neufreit Extrabold Italic';
-    src: url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold\ Italic.otf) format('otf');
+    src: url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold\ Italic.otf) format("opentype"), url(/fonts/Wahyu\ and\ Sani\ Co.\ -\ Neufreit\ ExtraBold\ Italic.ttf) format("truetype");
 }
 @font-face {
     font-family: 'Archia';
-    src: url(//fonts/Archia-Regular.otf) format('otf');
+    src: url(//fonts/Archia-Regular.otf) format("opentype"), url(//fonts/Archia-Regular.ttf) format("truetype"), ;
 }
 
 :root {
