@@ -622,8 +622,13 @@ box-shadow:
     }
 
     ul.nav {
-        height: 120px;
+        height: 130px;
     }
+
+    ul li {
+        height: 33%;
+    }
+
 
     .graphic-title {
         margin-bottom: 15vh;
